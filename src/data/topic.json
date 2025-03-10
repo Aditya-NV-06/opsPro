@@ -1,0 +1,93 @@
+{
+    "sportsShop": {
+        "name": "Aditya's Sports Shop",
+        "location": "123 Main Street, Anytown, USA",
+        "goods": [
+            {
+                "category": "Football",
+                "items": [
+                    {
+                        "name": "Football",
+                        "brand": "Nike",
+                        "price": 29.99,
+                        "stock": 50
+                    },
+                    {
+                        "name": "Football Jersey",
+                        "brand": "Adidas",
+                        "price": 49.99,
+                        "stock": 30
+                    }
+                ]
+            },
+            {
+                "category": "Basketball",
+                "items": [
+                    {
+                        "name": "Basketball",
+                        "brand": "Spalding",
+                        "price": 24.99,
+                        "stock": 40
+                    },
+                    {
+                        "name": "Basketball Shoes",
+                        "brand": "Under Armour",
+                        "price": 89.99,
+                        "stock": 20
+                    }
+                ]
+            },
+            {
+                "category": "Tennis",
+                "items": [
+                    {
+                        "name": "Tennis Racket",
+                        "brand": "Wilson",
+                        "price": 79.99,
+                        "stock": 15
+                    },
+                    {
+                        "name": "Tennis Balls",
+                        "brand": "Penn",
+                        "price": 9.99,
+                        "stock": 100
+                    }
+                ]
+            },
+            {
+                "category": "Baseball",
+                "items": [
+                    {
+                        "name": "Baseball Bat",
+                        "brand": "Easton",
+                        "price": 49.99,
+                        "stock": 25
+                    },
+                    {
+                        "name": "Baseball Glove",
+                        "brand": "Rawlings",
+                        "price": 59.99,
+                        "stock": 35
+                    }
+                ]
+            },
+            {
+                "category": "Soccer",
+                "items": [
+                    {
+                        "name": "Soccer Ball",
+                        "brand": "Adidas",
+                        "price": 19.99,
+                        "stock": 60
+                    },
+                    {
+                        "name": "Soccer Cleats",
+                        "brand": "Puma",
+                        "price": 79.99,
+                        "stock": 25
+                    }
+                ]
+            }
+        ]
+    }
+}
