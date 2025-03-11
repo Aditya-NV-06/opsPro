@@ -86,7 +86,6 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }} 
 
-
       - name: Setup Git config
         run: |
           git config user.name "GitHub Actions"
