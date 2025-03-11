@@ -98,15 +98,15 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
           REGISTRY: ghcr.io
         run: |
-          # Define the new image with tag
-          NEW_IMAGE="${REGISTRY}/${GITHUB_REPOSITORY}:${IMAGE_TAG}"
-          
-          # Update the deployment file directly
-          sed -i "s|image: ${REGISTRY}/${GITHUB_REPOSITORY}:.*|image: ${NEW_IMAGE}|g" kubernetes/deployment.yml
-          
-          # Verify the change
-          echo "Updated deployment to use image: ${NEW_IMAGE}"
-          grep -A 1 "image:" kubernetes/deployment.yml
+            # Define the new image with tag
+            NEW_IMAGE="${REGISTRY}/${GITHUB_REPOSITORY}:${IMAGE_TAG}"
+            echo "New image: ${NEW_IMAGE}"
+            # Update the deployment file directly
+            sed -i "s|image: ${REGISTRY}/${GITHUB_REPOSITORY}:.*|image: ${NEW_IMAGE}|g" kubernetes/deployment.yml
+            
+            # Verify the change
+            echo "Updated deployment to use image: ${NEW_IMAGE}"
+            grep -A 1 "image:" kubernetes/deployment.yml
 
       - name: Commit and push changes
         run: |
