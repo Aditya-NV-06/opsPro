@@ -62,12 +62,12 @@ jobs:
             type=ref,event=branch
             latest
 
-      - name: Build Docker image
+      - name: Build and Push Docker image
         uses: docker/build-push-action@v2
         with:
           context: .
           file: ./Dockerfile
-          push: false
+          push: true
           tags: ${{ steps.meta.outputs.tags }}
 
 
