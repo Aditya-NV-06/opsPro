@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: ''
+        image: 'ghcr.io/aditya-nv-06/opspro:sha-138c891b2a237265ef7f6bb711cad43e48f331ce'
         resources:
           limits:
             memory: "128Mi"
