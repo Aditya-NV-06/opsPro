@@ -72,7 +72,7 @@ jobs:
 
 
       - name: Push Docker image
-        run: docker push ${{ steps.meta.outputs.tags[0] }}
+        run: docker push ${{ steps.meta.outputs.tags }}
 
       - name: Set image tag output
         id: set_output
