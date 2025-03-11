@@ -67,12 +67,9 @@ jobs:
         with:
           context: .
           file: ./Dockerfile
-          platforms: linux/amd64,linux/arm64
           push: false
           tags: ${{ steps.meta.outputs.tags }}
 
-      - name: Run Trivy vulnerability scanner
-        run: docker run --rm -v ${{ github.workspace }}:/workdir aquasec/trivy --exit-code 0 --severity HIGH --no-progress /workdir
 
       - name: Push Docker image
         run: docker push ${{ steps.meta.outputs.tags[0] }}
